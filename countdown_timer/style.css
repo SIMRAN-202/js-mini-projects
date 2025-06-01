@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(251, 213, 170), rgb(156, 94, 32));
+}
+
+.countdown-timer {
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+h1{
+    text-align: center;
+    color: rgb(154, 51, 17);
+    margin-bottom: 50px;
+}
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.count-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+ 
+}
+
+.count-container span {
+  font-size: 2rem;
+  font-weight: bold;
+   background-color: white;
+   color:rgb(154, 51, 17);
+   padding: 20px;
+   border-radius: 30px;
+}
+.count-container p{
+    color: rgb(154, 51, 17);
+}
