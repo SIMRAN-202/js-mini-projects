@@ -1,0 +1,138 @@
+/* Reset & Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: url('bg.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container */
+.weather-container {
+  padding: 30px 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+background-color: #0a2e52;
+  width: 350px;
+  max-width: 90%;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Search Input */
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 12px;
+  font-size: 15px;
+  transition: border 0.3s;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: 
+  .32w#8db8e9;
+}
+
+.search-box button {
+  padding: 10px 16px;
+  background-color: #64a0e5;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #357abd;
+}
+
+/* === Weather Info Container === */
+#weatherInfo {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* === City Name === */
+#cityName {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* === Weather Icon === */
+#weatherIcon {
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  display: block;
+}
+
+/* === Description === */
+#description {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: white;
+  margin-bottom: 15px;
+}
+
+/* === Temperature === */
+#temperature {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ff6b6b;
+  margin-bottom: 10px;
+}
+.weather-info p{
+    color: white;
+}
+
+/* === Humidity & Wind === */
+#humidity,
+#wind {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 6px;
+}
+
+
+/* Error Message */
+.error-message {
+  color: #a8201b;
+  font-size: 14px;
+  margin-top: 15px;
+  font-size: bold;
+}
+
+/* Hide Elements Dynamically */
+.hidden {
+  display: none;
+}
