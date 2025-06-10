@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8d0f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.image-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.zoom-image {
+  width: 400px;
+  height: 300px;
+  transition: transform 0.4s ease;
+}
+
+.image-wrapper:hover .zoom-image {
+  transform: scale(1.2);
+}
+.zoomed {
+  transform: scale(1.2);
+}
