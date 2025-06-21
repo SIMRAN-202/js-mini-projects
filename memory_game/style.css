@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-gap: 15px;
+  justify-content: center;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background: #444;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  user-select: none;
+}
+
+.card.matched {
+  background: #2ecc71;
+  cursor: default;
+}
+
+.card.flipped {
+  background: #3498db;
+}
