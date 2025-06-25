@@ -1,0 +1,45 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: 24px;
+    color: blueviolet;
+    margin: 40px auto;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordian-item{
+    width: 50%;
+    background-color: rgb(215, 182, 247);
+    padding: 8px;
+    border-radius: 5px;
+    color: rgb(101, 20, 176);
+    border-bottom: 1px solid white;
+    margin-bottom: 5px;
+}
+
+.accordian-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 20px;
+}
+.accordian-heading span{
+    font-size: 24px;
+    cursor: pointer;
+
+}
+.accordian-item .hidden{
+    display: None;
+}
+.accordian-heading .show{
+    display: block;
+}
