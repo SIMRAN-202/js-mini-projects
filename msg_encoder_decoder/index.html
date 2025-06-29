@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spy Message Encoder/Decoder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Spy Message Encoder/Decoder</h2>
+
+    <label for="cipher">Choose Cipher:</label>
+    <select id="cipher">
+      <option value="caesar">Caesar Cipher</option>
+      <option value="rot13">ROT13</option>
+      <option value="atbash">Atbash Cipher</option>
+    </select>
+
+    <div id="shift-container">
+      <label for="shift">Shift (for Caesar):</label>
+      <input type="number" id="shift" min="1" max="25" value="3" />
+    </div>
+
+    <label for="message">Enter Message:</label>
+    <textarea id="message" rows="5" placeholder="Type your secret message..."></textarea>
+
+    <div class="buttons">
+      <button id="encodeBtn">Encode</button>
+      <button id="decodeBtn">Decode</button>
+      <button id="copyBtn">Copy</button>
+    </div>
+
+    <label for="output">Result:</label>
+    <textarea id="output" rows="5" readonly></textarea>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
